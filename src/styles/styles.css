@@ -1,4 +1,6 @@
-/* ============ desktop view ============ */
+/* NAVBAR */
+/* ============ Nested dropdown menu ============ */
+/* == Desktop view == */
 @media all and (min-width: 992px) {
 	.dropdown-menu li{ position: relative; 	}
 	.nav-item .submenu{ 
@@ -11,23 +13,114 @@
 	}
 	.dropdown-menu > li:hover > .submenu{ display: block; }
 }	
-/* ============ desktop view .end// ============ */
-/* ============ small devices ============ */
+/* == small devices view == */
 @media (max-width: 991px) {
   .dropdown-menu .dropdown-menu{
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
   }
 }	
-/* ============ small devices .end// ============ */
+/* ============ Nested dropdown menu .end ============ */
 
 .navbar-brand{
 	height: 40px;
 }
 
-#arngren-brand{
-}
-
 #checkout-cart {
+    cursor: pointer;
 	padding: 0;
 	font-size: 26px;
 }
+
+/* INDEX ELEMENTS */
+.product-exposition {
+    width: 80%; 
+    height: 300px; 
+    border-radius: 21px 21px 0 0;
+}
+
+@media (max-width: 767px){
+    .row > col:nth-child(odd) {
+        background-color: #343a40;
+    }
+    .row > col:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+}
+
+
+/* STOLEN BOOTSTRAP, CHECK LEGITIMACY */
+.container {
+    max-width: 960px;
+  }
+  
+  .icon-link > .bi {
+    width: .75em;
+    height: .75em;
+  }
+  
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+  }
+  
+  .product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+  }
+  
+  
+  /*
+   * Extra utilities
+   */
+  
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+  

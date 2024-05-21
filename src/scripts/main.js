@@ -1,5 +1,6 @@
 "use strict"
 
+// NAVBAR
 document.addEventListener("DOMContentLoaded", function(){
     // make it as accordion for smaller screens
     if (window.innerWidth < 992) {
@@ -34,3 +35,4 @@ document.addEventListener("DOMContentLoaded", function(){
     // end if innerWidth
     }); 
     // DOMContentLoaded  end
+    
