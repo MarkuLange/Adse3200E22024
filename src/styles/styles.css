@@ -1,11 +1,11 @@
-/* NAVBAR */
+/* ============================ NAVBAR =============================== */
 /* ============ Nested dropdown menu ============ */
 /* == Desktop view == */
 @media all and (min-width: 992px) {
 	.dropdown-menu li {
 		position: relative;
 	}
-
+ 
 	.nav-item .submenu {
 		display: none;
 		position: absolute;
@@ -25,7 +25,7 @@
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
   }
 }	
-/* ============ Nested dropdown menu .end ============ */
+/* ============ nested dropdown end ============ */
 
 .navbar-brand {
 	height: 40px;
@@ -37,7 +37,13 @@
 	font-size: 26px;
 }
 
-/* INDEX ELEMENTS */
+/* ================================== FOOTER ======================================== */
+
+.socials {
+    font-size: 28px;
+}
+
+/* ================================== INDEX ======================================== */
 .product-exposition {
     width: 80%; 
     height: 300px; 
@@ -130,6 +136,7 @@
     }
   }
   
+/* ========================= PRODUCT PAGE ===================== */
 .badge-success {
 	/* Bootstrap's success green */
 	background-color: #28a745 !important;
