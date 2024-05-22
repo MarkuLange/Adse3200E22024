@@ -50,6 +50,12 @@
     border-radius: 21px 21px 0 0;
 }
 
+.quad-pic {
+  object-fit: contain;
+  padding: 0;
+  height: 50%;
+}
+
 @media (max-width: 767px){
     .row > col:nth-child(odd) {
         background-color: #343a40;
