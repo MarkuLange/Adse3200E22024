@@ -43,6 +43,20 @@
     font-size: 28px;
 }
 
+/* ========================= MAIN COMMON ===================================== */
+
+.text-danger {
+  color: #c60000 !important;
+}
+
+.test-primary {
+ background-color: #ede6db;
+}
+
+.test-secondary {
+  background-color: #ceeefd;
+}
+
 /* ================================== INDEX ======================================== */
 .product-exposition {
     width: 80%; 
@@ -50,20 +64,32 @@
     border-radius: 21px 21px 0 0;
 }
 
+.quad-link1, .quad-link2, .quad-link3, .quad-link4 {
+  padding: 0;
+  height: 50%;
+  border: solid RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.quad-link1 {
+  border-radius: 21px 0 0 0;
+}
+
+.quad-link2 {
+  border-radius: 0 21px 0 0;
+}
+.quad-link3, .quad-link4{
+  border-radius: 0;
+}
+
+
+
 .quad-pic {
   object-fit: contain;
   padding: 0;
-  height: 50%;
+  height: 100%;
+  width: 100%;
 }
 
-@media (max-width: 767px){
-    .row > col:nth-child(odd) {
-        background-color: #343a40;
-    }
-    .row > col:nth-child(even) {
-        background-color: #f8f9fa;
-    }
-}
 
 
 /* STOLEN BOOTSTRAP, CHECK LEGITIMACY */
@@ -151,4 +177,42 @@
 .badge-warning {
 	background-color: #FFC107 !important;
 	color: black;
+}
+
+.price-range-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#upper-value, #lower-value {
+  width: 40%;
+}
+
+.read-more-btn {
+ float: right;
+ margin-left: 10px;
+}
+
+.order-box{
+  position: sticky;
+  left: 5px;
+  top: 60px;
+  width: 200px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 26px;
+  height: 22px;
+  right: -17px;
+  top: -3px;
+}
+.noUi-handle:after, .noUi-handle:before {
+  display: none;
+}
+
+.upsell-img {
+  object-fit: contain;
+  padding: 0;
+  height: 60%;
+  width: 60%;
 }

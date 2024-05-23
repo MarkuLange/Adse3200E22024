@@ -1,4 +1,11 @@
 "use strict"
+// DOM ELEMENTS
+const slider = document.getElementById('price-slider');
+const lowerValueInput = document.getElementById('lower-value')
+const upperValueInput = document.getElementById('upper-value')
+// DOM ELEMENTS END
+
+
 
 // NAVBAR
 document.addEventListener("DOMContentLoaded", function(){
@@ -33,6 +40,26 @@ document.addEventListener("DOMContentLoaded", function(){
       })
     }
     // end if innerWidth
+  // Initialize slider
+
+noUiSlider.create(slider, {
+   start: [0,10000],
+   connect: true,
+   step: 100,
+   range: {
+       'min': 0,
+       'max': 100000
+   }
+});
+
+slider.noUiSlider.on('update', function (values, handle) {
+    if (handle) {
+        upperValueInput.value = parseInt(values[handle]);
+    } else {
+        lowerValueInput.value = parseInt(values[handle]);
+    }
+});
+
     }); 
     // DOMContentLoaded  end
     
