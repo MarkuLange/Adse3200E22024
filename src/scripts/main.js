@@ -1,13 +1,6 @@
 "use strict"
-// DOM ELEMENTS
-const slider = document.getElementById('price-slider');
-const lowerValueInput = document.getElementById('lower-value')
-const upperValueInput = document.getElementById('upper-value')
-// DOM ELEMENTS END
 
-
-
-// NAVBAR
+// NAVIGATION
 document.addEventListener("DOMContentLoaded", function(){
     // make it as accordion for smaller screens
     if (window.innerWidth < 992) {
@@ -40,8 +33,13 @@ document.addEventListener("DOMContentLoaded", function(){
       })
     }
     // end if innerWidth
-  // Initialize slider
 
+  // Initialize slider
+  const slider = document.getElementById('price-slider');
+  
+  if (slider){
+  const lowerValueInput = document.getElementById('lower-value')
+  const upperValueInput = document.getElementById('upper-value')
 noUiSlider.create(slider, {
    start: [0,10000],
    connect: true,
@@ -59,7 +57,8 @@ slider.noUiSlider.on('update', function (values, handle) {
         lowerValueInput.value = parseInt(values[handle]);
     }
 });
+  }
 
-    }); 
-    // DOMContentLoaded  end
+}); 
+// DOMContentLoaded  end
     
