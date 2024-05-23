@@ -220,6 +220,7 @@ width: 100%;
 }
 
 .product-picture {
+  border-radius: 10px;
   width: 250px;
   height: 200px;
   background-color: white;
