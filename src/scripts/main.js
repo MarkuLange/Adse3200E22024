@@ -61,4 +61,3 @@ slider.noUiSlider.on('update', function (values, handle) {
 
 }); 
 // DOMContentLoaded  end
-    
