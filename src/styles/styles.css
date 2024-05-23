@@ -98,18 +98,18 @@ height: 50%;
 border: solid RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.quad-link1 {
+.quad-link1, .quad-pic1 {
 border-radius: 21px 0 0 0;
 }
 
-.quad-link2 {
+.quad-link2, .quad-pic2 {
 border-radius: 0 21px 0 0;
 }
-.quad-link3, .quad-link4{
+.quad-link3, .quad-link4, .quad-pic3, .quad-pic4{
 border-radius: 0;
 }
 
-.quad-pic {
+.quad-pic1, .quad-pic2, .quad-pic3, .quad-pic4 {
 object-fit: contain;
 padding: 0;
 height: 100%;
