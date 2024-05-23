@@ -79,6 +79,8 @@
 
 /* ================================== INDEX ======================================== */
 main.banner {
+  background-attachment: fixed;
+  background-position: center;
   background-image: url(../media/grassy-bg.jpg);
   color: var(--primary-color-beige);
 }
@@ -215,4 +217,18 @@ width: 100%;
   padding: 0;
   height: 60%;
   width: 60%;
+}
+
+.product-picture {
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  object-fit: contain;
+}
+
+
+/* ================================ CHECKOUT PAGE =========================== */
+
+.vipps-btn {
+  background-color: #ff5b24;
 }
