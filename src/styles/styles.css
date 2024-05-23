@@ -1,4 +1,33 @@
+/* ========================= COMMON===================================== */
+:root {
+  --primary-color-beige: #ede6db;
+  --secondary-color-blue: #ceeefd;
+  --main-text-color: RGBA(33, 37, 41, 1);
+}
+
+
+
+/* change bootstrap color */
+.text-danger {
+  color: #c60000 !important;
+}
+
+.test-primary {
+ background-color: var(--primary-color-beige);
+ color: var(--main-text-color);
+}
+
+.test-secondary {
+  background-color: var(--secondary-color-blue);
+  color: var(--main-text-color);
+}
+
+
 /* ============================ NAVBAR =============================== */
+.nav-link, .dropdown-item {
+  color: rgb(222, 222, 222);
+}
+
 /* ============ Nested dropdown menu ============ */
 /* == Desktop view == */
 @media all and (min-width: 992px) {
@@ -27,8 +56,12 @@
 }	
 /* ============ nested dropdown end ============ */
 
+#arngren-brand {
+  transform: translateY(-4px);
+}
+
 .navbar-brand {
-	height: 40px;
+	height: 40px; 
 }
 
 #checkout-cart {
@@ -43,130 +76,97 @@
     font-size: 28px;
 }
 
-/* ========================= MAIN COMMON ===================================== */
-
-.text-danger {
-  color: #c60000 !important;
-}
-
-.test-primary {
- background-color: #ede6db;
-}
-
-.test-secondary {
-  background-color: #ceeefd;
-}
 
 /* ================================== INDEX ======================================== */
+main.banner {
+  background-image: url(../media/grassy-bg.jpg);
+  color: var(--primary-color-beige);
+}
+
+
 .product-exposition {
-    width: 80%; 
-    height: 300px; 
-    border-radius: 21px 21px 0 0;
+  width: 80%; 
+  height: 300px; 
+  border-radius: 21px 21px 0 0;
 }
 
 .quad-link1, .quad-link2, .quad-link3, .quad-link4 {
-  padding: 0;
-  height: 50%;
-  border: solid RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+padding: 0;
+height: 50%;
+border: solid RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .quad-link1 {
-  border-radius: 21px 0 0 0;
+border-radius: 21px 0 0 0;
 }
 
 .quad-link2 {
-  border-radius: 0 21px 0 0;
+border-radius: 0 21px 0 0;
 }
 .quad-link3, .quad-link4{
-  border-radius: 0;
+border-radius: 0;
 }
-
-
 
 .quad-pic {
-  object-fit: contain;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+object-fit: contain;
+padding: 0;
+height: 100%;
+width: 100%;
 }
 
 
-
-/* STOLEN BOOTSTRAP, CHECK LEGITIMACY */
+/* == STOLEN BOOTSTRAP == */
 .container {
-    max-width: 960px;
-  }
-  
-  .icon-link > .bi {
-    width: .75em;
-    height: .75em;
-  }
-  
-  /*
-   * Custom translucent site header
-   */
-  
-  .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /*
-   * Dummy devices (replace them with your own or something else entirely!)
-   */
-  
-  .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    transform: rotate(30deg);
-  }
-  
-  .product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
-  }
-  
-  .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
-  }
-  
-  
-  /*
-   * Extra utilities
-   */
-  
-  .flex-equal > * {
+  max-width: 960px;
+}
+
+.icon-link > .bi {
+  width: .75em;
+  height: .75em;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+.product-device {
+  position: absolute;
+  right: 5%;
+  bottom: 6%;
+  width: 400px;
+  height: 400px;  
+  background-image: url(../media/banner-bike.webp);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: contain;
+  transform: rotate(40deg);
+}
+
+
+.product-device-2 {
+  left: 0;
+  bottom: -15%;
+  right: auto;
+  background-image: url(../media/banner-jedi.png);
+  background-position: center;
+  background-size: contain;
+  transform: rotate(-5deg);
+ 
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
     flex: 1;
   }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      flex: 1;
-    }
-  }
+}
+
   
 /* ========================= PRODUCT PAGE ===================== */
 .badge-success {
