@@ -34,6 +34,18 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     // end if innerWidth
 
+    this.querySelectorAll('.handleknapp').forEach(function(knapp) {
+      knapp.addEventListener('click', function(e){
+        e.preventDefault();
+       const counter = document.getElementById('cart-counter')
+       if (!counter.innerHTML) {
+        counter.innerHTML = 1;
+       } else {
+        counter.innerHTML = parseInt(counter.innerHTML) + 1;
+       }
+      })
+    })
+
   // Initialize slider
   const slider = document.getElementById('price-slider');
   
@@ -60,4 +72,6 @@ slider.noUiSlider.on('update', function (values, handle) {
   }
 
 }); 
+
+
 // DOMContentLoaded  end
